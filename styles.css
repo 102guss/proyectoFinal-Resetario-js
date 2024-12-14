@@ -1,5 +1,5 @@
 body{
-      background-image: url('/imagenes/cocina5.jpg'); 
+      background-image: url('/imagenes/cocina5.jpg') !important; 
  
    
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
