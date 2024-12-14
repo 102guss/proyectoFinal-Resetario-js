@@ -1,0 +1,13 @@
+body{
+    
+    background-image: url('/imagenes/cocina4.jpg');
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+}
+h1{
+    color:rgb(255, 217, 0);
+}
+.card-header{
+background-color: rgb(212, 165, 46);
+}
