@@ -1,5 +1,5 @@
 // Arreglo para almacenar las recetas
-let recipes = [];
+let recipiente = [];
 
 // Función para agregar una receta
 function addRecipe(name, ingredients, steps, category, imageURL) {
@@ -12,16 +12,16 @@ function addRecipe(name, ingredients, steps, category, imageURL) {
         imageURL
     };
 
-    recipes.push(recipe);
-    renderRecipes(); // Volver a renderizar las recetas después de agregar una
+    recipiente.push(recipe);
+    renderrecipiente(); // Volver a renderizar las recetas después de agregar una
 }
 
 // Función para renderizar todas las recetas
-function renderRecipes() {
+function renderrecipiente() {
     const recipeList = document.getElementById('recipeList');
     recipeList.innerHTML = ''; // Limpiar lista de recetas
 
-    recipes.forEach(recipe => {
+    recipiente.forEach(recipe => {
         const recipeElement = document.createElement('div');
         recipeElement.className = 'col-md-12 mb-3';
 
@@ -52,8 +52,8 @@ function renderRecipes() {
 
 // Función para eliminar una receta
 function deleteRecipe(id) {
-    recipes = recipes.filter(recipe => recipe.id !== id); // Eliminar receta por ID
-    renderRecipes(); // Volver a renderizar la lista sin la receta eliminada
+    recipiente = recipiente.filter(recipe => recipe.id !== id); // Eliminar receta por ID
+    renderrecipiente(); // Volver a renderizar la lista sin la receta eliminada
 }
 
 // Manejar el formulario de agregar receta
